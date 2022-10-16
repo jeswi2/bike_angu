@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const appRoutes:Routes=[
   {
@@ -15,6 +16,9 @@ const appRoutes:Routes=[
   {
     path:"home",component:HomeComponent
   },
+  {
+    path:"gala",component:GalleryComponent
+  }
   
 ]
 
@@ -23,12 +27,14 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

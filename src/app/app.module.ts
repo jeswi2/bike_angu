@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { BookingComponent } from './booking/booking.component';
 
 const appRoutes:Routes=[
   {
@@ -17,7 +18,10 @@ const appRoutes:Routes=[
     path:"home",component:HomeComponent
   },
   {
-    path:"gala",component:GalleryComponent
+    path:"gallery",component:GalleryComponent
+  },
+  {
+    path:"booking",component:BookingComponent
   }
   
 ]
@@ -28,7 +32,8 @@ const appRoutes:Routes=[
     LoginComponent,
     NavbarComponent,
     HomeComponent,
-    GalleryComponent
+    GalleryComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
